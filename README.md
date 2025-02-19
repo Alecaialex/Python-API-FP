@@ -8,11 +8,11 @@
 > Currently, the API supports the following two endpoints:
 
 ```
-/players/<Number><Name>
+/jugadores/<PlayerNumber><PlayerName>
 ```
 
 ```
-/recentmatches/<n>
+/ultimospartidos/<n>
 ```
 
 > Recent matches are ordered from most recent to oldest, with 0 being the latest match played.
@@ -22,15 +22,15 @@
 For example:
 
 ```
-/players/Julian%20Álvarez
+/jugador/Julian%20Álvarez
 ```
 
 ```
-/players/22
+/jugador/22
 ```
 
 ```
-/recentmatches/2
+/ultimospartidos/2
 ```
 
 <br><br>
