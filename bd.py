@@ -18,6 +18,8 @@ cur.execute("INSERT INTO partidos (fecha, rival, ganado, goles_a_favor, goles_en
 cur.execute("DROP TABLE IF EXISTS keys")
 cur.execute("CREATE TABLE keys (key TEXT PRIMARY KEY)")
 cur.execute("INSERT INTO keys (key) VALUES ('TestKey123')")
+cur.execute("INSERT INTO keys (key) VALUES ('Alex')")
+
 # Pruebas
 #print(cur.execute("SELECT * FROM jugadores WHERE numero = 19;").fetchall())
 con.commit()

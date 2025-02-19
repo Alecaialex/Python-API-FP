@@ -28,6 +28,8 @@ def page_not_found(error):
     return "Recurso no encontrado", 404
 
 def validarKey(key):
+    if "'" in key or "=" in key or ";" in key or "--" in key:
+        return False
     return consultar(f"SELECT * FROM keys WHERE key = '{key}';") != None
 
 def consultar(consulta):
@@ -37,7 +39,7 @@ def consultar(consulta):
     resultado = cur.fetchone()
     con.close()
     return resultado
-
+    
 def esNumero(n):
     try:
         int(n)
@@ -46,4 +48,4 @@ def esNumero(n):
         return False
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0')
