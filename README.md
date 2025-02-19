@@ -4,8 +4,8 @@
 
 ---
 
-[!NOTE]
-Modo de uso:
+> [!NOTE]
+> Modo de uso:
 
 Actualmente la API cuenta con las dos siguientes llamadas posibles:
 
