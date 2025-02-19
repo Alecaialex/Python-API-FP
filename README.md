@@ -32,3 +32,12 @@ Por ejemplo:
 ```
 /ultimospartidos/2
 ```
+
+> [!IMPORTANT]
+> Antes de ejecutar `api.py`, recuerda que debes ejecutar `bd.py` para crear la base de datos
+
+> [!CAUTION]
+> Para ejecutar el código debes tener instaladas las siguientes dependencias:
+
+- sqlite3
+- flask
