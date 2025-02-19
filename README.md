@@ -5,9 +5,7 @@
 ---
 
 > [!NOTE]
-> Modo de uso:
-
-Actualmente la API cuenta con las dos siguientes llamadas posibles:
+> Actualmente la API cuenta con las dos siguientes llamadas posibles:
 
 ```
 /jugadores/<Número><Nombre>
@@ -18,6 +16,8 @@ Actualmente la API cuenta con las dos siguientes llamadas posibles:
 ```
 
 > Últimos partidos ordenados de mas reciente a mas antiguo, siendo 0 el ultimo jugado
+
+<br><br>
 
 Por ejemplo:
 
