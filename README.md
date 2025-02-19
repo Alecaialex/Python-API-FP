@@ -36,7 +36,7 @@ For example:
 <br><br>
 
 > [!IMPORTANT]  
-> Before running `api.py`, remember to run `bd.py` to create the database.
+> Before running `api.py`, remember to run `bd.py` to create the database (If it doesnt already exist).
 
 <br>
 
