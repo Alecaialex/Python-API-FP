@@ -1,43 +1,48 @@
 # Python API Test
 
-### Test de API en python creado para probar cosas aprendidas en la FP
+### Python API test created to practice concepts learned in class
 
 ---
 
-> [!NOTE]
-> Actualmente la API cuenta con las dos siguientes llamadas posibles:
+> [!NOTE]  
+> Currently, the API supports the following two endpoints:
 
 ```
-/jugadores/<Número><Nombre>
+/players/<Number><Name>
 ```
 
 ```
-/ultimospartidos/<n>
+/recentmatches/<n>
 ```
 
-> Últimos partidos ordenados de mas reciente a mas antiguo, siendo 0 el ultimo jugado
+> Recent matches are ordered from most recent to oldest, with 0 being the latest match played.
 
 <br><br>
 
-Por ejemplo:
+For example:
 
 ```
-/jugadores/Julian%20Álvarez
-```
-
-```
-/jugadores/22
+/players/Julian%20Álvarez
 ```
 
 ```
-/ultimospartidos/2
+/players/22
 ```
 
-> [!IMPORTANT]
-> Antes de ejecutar `api.py`, recuerda que debes ejecutar `bd.py` para crear la base de datos
+```
+/recentmatches/2
+```
 
-> [!CAUTION]
-> Para ejecutar el código debes tener instaladas las siguientes dependencias:
+<br><br>
 
-- sqlite3
+> [!IMPORTANT]  
+> Before running `api.py`, remember to run `bd.py` to create the database.
+
+<br>
+
+> [!CAUTION]  
+> To run the code, you need to have the following dependencies installed:
+
+- sqlite3  
 - flask
+
