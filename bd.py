@@ -1,6 +1,6 @@
 import sqlite3
 
-con = sqlite3.connect("test.db")
+con = sqlite3.connect("atleti.db")
 cur = con.cursor()
 
 cur.execute("DROP TABLE IF EXISTS jugadores")

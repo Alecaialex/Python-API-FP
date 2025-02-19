@@ -18,7 +18,7 @@ def partido(n):
     return {"id": partido[0], "fecha": partido[1], "rival": partido[2], "ganado": partido[3], "goles_a_favor": partido[4], "goles_en_contra": partido[5], "competicion": partido[6]}
 
 def consultar(consulta):
-    con = sqlite3.connect("test.db")
+    con = sqlite3.connect("atleti.db")
     cur = con.cursor()
     cur.execute(consulta)
     resultado = cur.fetchone()
@@ -31,16 +31,6 @@ def esNumero(n):
         return True
     except ValueError:
         return False
-    
-class Jugador:
-        def __init__(self, numero, nombre, edad, posicion, goles, asistencias, partidos_jugados):
-            self.numero = numero
-            self.nombre = nombre
-            self.edad = edad
-            self.posicion = posicion
-            self.goles = goles
-            self.asistencias = asistencias
-            self.partidos_jugados = partidos_jugados
 
 if __name__ == '__main__':
     app.run()
